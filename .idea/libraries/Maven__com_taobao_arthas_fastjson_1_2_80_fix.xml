@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.taobao.arthas:fastjson:1.2.80-fix">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/arthas/fastjson/1.2.80-fix/fastjson-1.2.80-fix.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/arthas/fastjson/1.2.80-fix/fastjson-1.2.80-fix-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/taobao/arthas/fastjson/1.2.80-fix/fastjson-1.2.80-fix-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

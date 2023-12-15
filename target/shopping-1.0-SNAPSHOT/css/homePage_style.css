@@ -1,0 +1,313 @@
+/* 全局样式 */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* 头部样式 */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* 适当的内边距 */
+}
+/* 商城图标样式 */
+.logo-container{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.logo-container img{
+    margin-left: auto; /* 将图像推到右侧 */
+    width: 20%;
+}
+
+/* 搜索框和按钮样式 */
+.search-container {
+    width: 30%;
+    display: flex;
+    background-color: #f5f5f5;
+    justify-content: center; /* 居中 */
+    align-items: center; /* 在垂直方向上居中 */
+    margin-top: 20px; /* 可根据需要调整上边距 */
+    margin-bottom: 20px;
+}
+
+
+/* 搜索框样式 */
+.search-container input {
+    width: 280px; /* 调整搜索框宽度 */
+    height: 42px;
+    border-radius: 42px;
+    border: 2px solid #ff8c00;
+    padding: 1px;
+    background: #fff;
+    transition: .3s linear;
+    outline: none; /* 添加这行以消除默认外边框 */
+}
+
+.search-container input:focus {
+    width: 330px; /* 调整聚焦时搜索框宽度 */
+    border: 3px solid #ff4d00;
+}
+
+
+/* 搜索按钮样式 */
+.search-container button {
+    background: #ff8c00; /* 修改背景颜色 */
+    color: #fff; /* 修改文字颜色 */
+    border: none; /* 去掉边框 */
+    height: 42px; /* 调整按钮高度 */
+    width: 42px; /* 调整按钮宽度 */
+    border-radius: 10px;
+    margin-left: -2px; /* 使按钮与搜索框之间没有间隙 */
+}
+
+/* 鼠标悬停时的样式 */
+.search-container button:hover {
+    background-color: #ff4d00;
+    border-radius: 10px;
+}
+
+/* 用户样式 */
+.user-container{
+    width: 20%;
+}
+
+.user-container img {
+    width: 20px; /* 设置图标的宽度 */
+    height: 20px; /* 设置图标的高度 */
+    border-radius: 50%; /* 使图标呈圆形，根据需要调整 */
+}
+.user-container img{
+    width: 10%;
+}
+
+
+/* 分类和轮播图样式 */
+.category-container {
+    background-color: white;
+    width: 80%; /* 设置容器宽度 */
+    height: auto; /* 设置容器高度 */
+    margin: 0 auto; /* 水平居中 */
+    border-radius: 42px;
+    margin-bottom: 10px;
+}
+
+/* 分类样式 */
+.category {
+    display: flex;
+    justify-content: center;
+    border:10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* 分类项样式 */
+.category-item {
+    padding: 10px;
+    cursor: pointer;
+    transition:  0.3s ; /* 添加过渡效果 */
+}
+
+/* 鼠标悬停时的样式 */
+.category-item:hover {
+    background-color: #FF620057;
+    border-radius: 10px;
+}
+
+/* 轮播图样式 */
+.carousel-container {
+    width: 800px; /* 设置容器宽度 */
+    height: 400px; /* 设置容器高度 */
+    margin: 0 auto; /* 水平居中 */
+    overflow: hidden; /* 隐藏溢出内容 */
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* 填充满容器宽度 */
+    height: 100%; /* 填充满容器高度 */
+
+}
+
+.carousel-item {
+    flex: 0 0 auto; /* 禁止轮播图项缩放 */
+    width: 100%; /* 填充满容器宽度 */
+    height: 100%; /* 填充满容器高度 */
+    margin: 0;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%; /* 图片宽度填充满轮播图项 */
+    height: 100%; /* 图片高度填充满轮播图项 */
+    object-fit: cover; /* 图片拉伸以填充满轮播图项 */
+    border-radius: 15px;
+}
+
+
+/* 猜你喜欢样式 */
+.recommendation-container {
+    background-color: white;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 42px;
+    padding: 20px; /* 添加内边距 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-container {
+    display: flex;
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease; /* 添加过渡效果 */
+    cursor: pointer; /* 添加手型指针 */
+}
+
+.product-container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* 鼠标悬停时的阴影效果 */
+}
+
+.product-container img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    border-top-left-radius: 5px; /* 添加圆角 */
+    border-top-right-radius: 5px; /* 添加圆角 */
+}
+
+.product-container .text-container {
+    padding: 10px;
+    width: 60%;
+    height: auto;
+}
+
+.product-container h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.product-container p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.price {
+    color: #ff4d00;
+    font-weight: bold; /* 加粗价格文本 */
+}
+
+.quantity {
+    color: #808080;
+}
+
+.add-to-cart-btn {
+    color: #fff;
+    background-color: #ff4d00;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* 调整按钮内边距 */
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #ff8c00; /* 鼠标悬停时的背景颜色变为橙色 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 鼠标悬停时的阴影效果 */
+}
+
+
+/* 购物车容器样式 */
+.cart-container {
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    position: fixed;
+    bottom: 12%;
+    right: 3%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* 购物车内容样式 */
+.cart-text {
+}
+
+
+/* 提交按钮样式 */
+.submit-btn {
+    border: none;
+    background-color: orange; /* 默认橙色 */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px 0 0 20px; /* 半圆弧型，左上和左下设置半径 */
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #ff4d00;
+}
+
+/* 清空按钮样式 */
+.clear-btn {
+    border: none;
+    background-color: grey; /* 默认灰色 */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0; /* 半圆弧型，右上和右下设置半径 */
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    background-color: blue; /* 悬停蓝色 */
+}
+
+
+/* 购物车按钮样式 */
+.cart-btn {
+    position: fixed;
+    width: 4%;
+    bottom: 50px;
+    right: 20px;
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 15px;
+}
+
+.cart-btn:hover {
+    background-color: #ff4d00;
+}
+.cart-btn img {
+    width: 100%;
+}
+
+/* 聊天样式 */
+.chat-btn{
+    position: fixed;
+    bottom: 50px;
+    left: 20px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    width: 5%;
+    border: none;
+}
+.chat-btn img{
+    width: 100%;
+}
